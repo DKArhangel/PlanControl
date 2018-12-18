@@ -30,3 +30,19 @@ G:\C projects\plan\Plan\Plan\obj\Debug\Plan.csproj.CoreCompileInputs.cache
 G:\C projects\plan\Plan\Plan\obj\Debug\Plan.csproj.CopyComplete
 G:\C projects\plan\Plan\Plan\obj\Debug\Plan.exe
 G:\C projects\plan\Plan\Plan\obj\Debug\Plan.pdb
+D:\Projects\PlanControl\Plan\bin\Debug\Plan.exe.config
+D:\Projects\PlanControl\Plan\bin\Debug\Plan.exe
+D:\Projects\PlanControl\Plan\bin\Debug\Plan.pdb
+D:\Projects\PlanControl\Plan\bin\Debug\System.Data.SQLite.dll
+D:\Projects\PlanControl\Plan\bin\Debug\System.Data.SQLite.xml
+D:\Projects\PlanControl\Plan\bin\Debug\System.Data.SQLite.dll.config
+D:\Projects\PlanControl\Plan\obj\Debug\Plan.csprojAssemblyReference.cache
+D:\Projects\PlanControl\Plan\obj\Debug\Plan.Form1.resources
+D:\Projects\PlanControl\Plan\obj\Debug\Plan.Form2.resources
+D:\Projects\PlanControl\Plan\obj\Debug\Plan.Properties.Resources.resources
+D:\Projects\PlanControl\Plan\obj\Debug\Plan.Resource1.resources
+D:\Projects\PlanControl\Plan\obj\Debug\Plan.csproj.GenerateResource.cache
+D:\Projects\PlanControl\Plan\obj\Debug\Plan.csproj.CoreCompileInputs.cache
+D:\Projects\PlanControl\Plan\obj\Debug\Plan.csproj.CopyComplete
+D:\Projects\PlanControl\Plan\obj\Debug\Plan.exe
+D:\Projects\PlanControl\Plan\obj\Debug\Plan.pdb

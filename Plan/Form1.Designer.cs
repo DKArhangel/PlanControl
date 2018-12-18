@@ -32,6 +32,7 @@
             this.tbPX = new System.Windows.Forms.TextBox();
             this.tbPY = new System.Windows.Forms.TextBox();
             this.lb1 = new System.Windows.Forms.Label();
+            this.debug = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // btopnfadd
@@ -67,11 +68,20 @@
             this.lb1.TabIndex = 4;
             this.lb1.Text = "0";
             // 
+            // debug
+            // 
+            this.debug.Location = new System.Drawing.Point(12, 338);
+            this.debug.Multiline = true;
+            this.debug.Name = "debug";
+            this.debug.Size = new System.Drawing.Size(976, 236);
+            this.debug.TabIndex = 5;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1000, 586);
+            this.Controls.Add(this.debug);
             this.Controls.Add(this.lb1);
             this.Controls.Add(this.tbPY);
             this.Controls.Add(this.tbPX);
@@ -93,6 +103,7 @@
         private System.Windows.Forms.TextBox tbPX;
         private System.Windows.Forms.TextBox tbPY;
         private System.Windows.Forms.Label lb1;
+        private System.Windows.Forms.TextBox debug;
     }
 }
 

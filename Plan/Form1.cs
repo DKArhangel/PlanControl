@@ -22,6 +22,9 @@ namespace Plan
         int posy = 0;
         string tp = null;
 
+        int tubeSize = 8;
+        int tubeShift = 4;
+
         public Form1()
         {
             InitializeComponent();
@@ -40,20 +43,24 @@ namespace Plan
                 while (SQL.Read())
                 {
                     int type = SQL.GetInt32(3);
-                    posx = SQL.GetInt32(4);
-                    posy = SQL.GetInt32(5);
-                    string res = SQL.GetString(6);
+                    int tubeCol = SQL.GetInt32(2);
+                    int tubeRow = SQL.GetInt32(1);
 
-                    if (type == 1)
+                    Array coords = GetTubeXY(tubeRow, tubeCol);
+                    string res = SQL.GetString(6);
+                    Bitmap Image = null;
+                    switch (type)
                     {
-                        g.DrawImage(im.tube, new Rectangle(posx, posy, 7, 7));
-                        tp = res;
+                        case 1:
+                            Image = im.tube;
+                            break;
+                        case 2:
+                            Image = im.plg;
+                            break;
                     }
-                    else if (type == 2)
-                    {
-                        g.DrawImage(im.plg, new Rectangle(posx, posy, 7, 7));
-                        tp = res;
-                    }
+                    tp = res;
+                    g.DrawImage(Image, new Rectangle((int) coords.GetValue(0), (int) coords.GetValue(1), tubeSize, tubeSize));
+                    debug.Text += " row: "+ tubeRow + "col: " + tubeCol + " [" + coords.GetValue(0) + ", " + coords.GetValue(1) + "]\r\n";
                 }
             }
         }
@@ -77,14 +84,63 @@ namespace Plan
 
         private void Form1_MouseDown(object sender, MouseEventArgs e)
         {
-            if((e.X < posx + 7) && (e.X > posx))
+            Array coords = GetTubeRowCol(e.X, e.Y);
+
+            debug.Text = "[" + coords.GetValue(0) + ", " + coords.GetValue(1) + "]\r\n";
+
+            //return;
+            SQLiteCommand CMD = DB.CreateCommand();
+            CMD.CommandText = "select * from planClear";
+            SQLiteDataReader SQL = CMD.ExecuteReader();
+            if (SQL.HasRows)
+            {
+                debug.Clear();
+                while (SQL.Read())
+                {
+                    int type = SQL.GetInt32(3);
+                    posx = SQL.GetInt32(1);
+                    posy = SQL.GetInt32(2);
+                    string res = SQL.GetString(6);
+
+                    debug.Text += "["+type+", "+posx+", "+posy+", "+ res+"]\r\n";
+                }
+            }
+
+            
+            if ((e.X < posx + 7) && (e.X > posx))
                 if ((e.Y < posy + 7) && (e.Y > posy))
                 {
                 tbPX.Clear();
                 mouseclick = true;
                 tbPX.Text = tp.ToString();
-            }
+                }
            
+        }
+
+        private Array GetTubeRowCol(double x, double y)
+        {
+
+            int[] coords = new int[] {
+                (int) Math.Floor(x / tubeSize), //Колонна
+                (int) Math.Floor(y / tubeSize) //Ряд
+            };
+            //сместили если четный ряд
+            if ( (int) coords.GetValue(1) % 2 == 0)
+                coords.SetValue((int) Math.Floor( (x - tubeShift) / tubeSize), 0);
+            return coords;
+        }
+
+        private Array GetTubeXY(int x, int y)
+        {
+
+            int[] coords = new int[] {
+                (int) x * tubeSize, //Колонна
+                (int) y * tubeSize //Ряд
+            };
+            //сместили если четный ряд
+            if ((int)coords.GetValue(1) % 2 == 0)
+                coords.SetValue( (int) (x * tubeSize + tubeShift), 0);
+            return coords;
         }
 
         private void Form1_MouseUp(object sender, MouseEventArgs e)
