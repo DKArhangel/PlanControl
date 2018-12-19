@@ -21,15 +21,14 @@ namespace Plan
 
         private void btAdd_Click(object sender, EventArgs e)
         {
-            if (tbRow.Text != "" && tbCol.Text != "" && tbX.Text != "" && tbY.Text != "")
+            if (tbRow.Text != "" && tbCol.Text != "")
             {
                 SQLiteCommand CMD = DB.CreateCommand();
-                CMD.CommandText = "insert into PlanClear(row,col,posx,posy,type) values( @row , @col, @posx, @posy, @type )";
+                CMD.CommandText = "insert into PlanClear(row,col,type,tupes) values( @row , @col, @type, @tupes )";
                 CMD.Parameters.Add("@row", System.Data.DbType.String).Value = tbRow.Text;
                 CMD.Parameters.Add("@col", System.Data.DbType.String).Value = tbCol.Text;
-                CMD.Parameters.Add("@posx", System.Data.DbType.String).Value = tbX.Text;
-                CMD.Parameters.Add("@posy", System.Data.DbType.String).Value = tbY.Text;
-                CMD.Parameters.Add("@type", System.Data.DbType.String).Value = "tube";
+                CMD.Parameters.Add("@type", System.Data.DbType.String).Value = "1";
+                CMD.Parameters.Add("@tupes", System.Data.DbType.String).Value = "Tube";
                 CMD.ExecuteNonQuery();
             }
 

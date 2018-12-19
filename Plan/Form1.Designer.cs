@@ -37,7 +37,7 @@
             // 
             // btopnfadd
             // 
-            this.btopnfadd.Location = new System.Drawing.Point(13, 13);
+            this.btopnfadd.Location = new System.Drawing.Point(789, 12);
             this.btopnfadd.Name = "btopnfadd";
             this.btopnfadd.Size = new System.Drawing.Size(75, 23);
             this.btopnfadd.TabIndex = 1;
@@ -70,6 +70,8 @@
             // 
             // debug
             // 
+            this.debug.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.debug.Location = new System.Drawing.Point(12, 338);
             this.debug.Multiline = true;
             this.debug.Name = "debug";

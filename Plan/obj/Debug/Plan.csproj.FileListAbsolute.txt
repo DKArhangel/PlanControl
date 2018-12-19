@@ -46,3 +46,19 @@ D:\Projects\PlanControl\Plan\obj\Debug\Plan.csproj.CoreCompileInputs.cache
 D:\Projects\PlanControl\Plan\obj\Debug\Plan.csproj.CopyComplete
 D:\Projects\PlanControl\Plan\obj\Debug\Plan.exe
 D:\Projects\PlanControl\Plan\obj\Debug\Plan.pdb
+G:\C projects\plan\PlanControl.git\Plan\bin\Debug\Plan.exe.config
+G:\C projects\plan\PlanControl.git\Plan\bin\Debug\Plan.exe
+G:\C projects\plan\PlanControl.git\Plan\bin\Debug\Plan.pdb
+G:\C projects\plan\PlanControl.git\Plan\bin\Debug\System.Data.SQLite.dll
+G:\C projects\plan\PlanControl.git\Plan\bin\Debug\System.Data.SQLite.xml
+G:\C projects\plan\PlanControl.git\Plan\bin\Debug\System.Data.SQLite.dll.config
+G:\C projects\plan\PlanControl.git\Plan\obj\Debug\Plan.csprojAssemblyReference.cache
+G:\C projects\plan\PlanControl.git\Plan\obj\Debug\Plan.Form1.resources
+G:\C projects\plan\PlanControl.git\Plan\obj\Debug\Plan.Form2.resources
+G:\C projects\plan\PlanControl.git\Plan\obj\Debug\Plan.Properties.Resources.resources
+G:\C projects\plan\PlanControl.git\Plan\obj\Debug\Plan.Resource1.resources
+G:\C projects\plan\PlanControl.git\Plan\obj\Debug\Plan.csproj.GenerateResource.cache
+G:\C projects\plan\PlanControl.git\Plan\obj\Debug\Plan.csproj.CoreCompileInputs.cache
+G:\C projects\plan\PlanControl.git\Plan\obj\Debug\Plan.csproj.CopyComplete
+G:\C projects\plan\PlanControl.git\Plan\obj\Debug\Plan.exe
+G:\C projects\plan\PlanControl.git\Plan\obj\Debug\Plan.pdb
