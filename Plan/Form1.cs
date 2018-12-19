@@ -98,15 +98,19 @@ namespace Plan
                 }
             }
 
-            
-            //if ((e.X < row + 7) && (e.X > row))
+            tbPX.Clear();
+            tbPX.Text = e.X.ToString();
+            tbPY.Clear();
+            tbPY.Text = e.Y.ToString();
+
+            //if ((e.X < row + 8) && (e.X > row))
             //    if ((e.Y < col + 7) && (e.Y > col))
             //    {
-            //    tbPX.Clear();
-                
-            //    tbPX.Text = tp.ToString();
+            //        tbPX.Clear();
+
+            //        tbPX.Text =e.X.ToString();
             //    }
-           
+
         }
 
         private Array GetTubeRowCol(double x, double y)
@@ -116,8 +120,8 @@ namespace Plan
                 (int) Math.Floor(y / tubeSize) //Ряд
             };
             //сместили если четный ряд
-            if ((int)coords.GetValue(0) % 2 == 0)
-                coords.SetValue((int)(x * tubeSize), 0);
+            //if ((int)coords.GetValue(0) % 2 == 0)
+            //    coords.SetValue((int)(x * tubeSize), 0);
             return coords;
         }
 
@@ -139,8 +143,8 @@ namespace Plan
         }
     }
 }
-// 0   1   2   3     4
-// id row col type tupes 
-// ai int int int  string
-//     nn  nn  nn
-// 1   1   1   1    tube
+// 0   1   2   3     4         номер столбца
+// id row col type tupes       название столбца
+// ai int int int  string      тп данных
+//     nn  nn  nn              не пустой
+// 1   1   1   1    tube       пример

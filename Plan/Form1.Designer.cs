@@ -72,10 +72,10 @@
             // 
             this.debug.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.debug.Location = new System.Drawing.Point(12, 338);
+            this.debug.Location = new System.Drawing.Point(12, 518);
             this.debug.Multiline = true;
             this.debug.Name = "debug";
-            this.debug.Size = new System.Drawing.Size(976, 236);
+            this.debug.Size = new System.Drawing.Size(976, 56);
             this.debug.TabIndex = 5;
             // 
             // Form1
