@@ -33,6 +33,7 @@
             this.tbPY = new System.Windows.Forms.TextBox();
             this.lb1 = new System.Windows.Forms.Label();
             this.debug = new System.Windows.Forms.TextBox();
+            this.sqLiteCommand1 = new System.Data.SQLite.SQLiteCommand();
             this.SuspendLayout();
             // 
             // btopnfadd
@@ -78,6 +79,10 @@
             this.debug.Size = new System.Drawing.Size(976, 56);
             this.debug.TabIndex = 5;
             // 
+            // sqLiteCommand1
+            // 
+            this.sqLiteCommand1.CommandText = null;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -94,6 +99,7 @@
             this.Load += new System.EventHandler(this.Form1_Load);
             this.Paint += new System.Windows.Forms.PaintEventHandler(this.Form1_Paint);
             this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Form1_MouseDown);
+            this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.Form1_MouseMove);
             this.MouseUp += new System.Windows.Forms.MouseEventHandler(this.Form1_MouseUp);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -106,6 +112,7 @@
         private System.Windows.Forms.TextBox tbPY;
         private System.Windows.Forms.Label lb1;
         private System.Windows.Forms.TextBox debug;
+        private System.Data.SQLite.SQLiteCommand sqLiteCommand1;
     }
 }
 
