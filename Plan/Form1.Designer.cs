@@ -31,14 +31,14 @@
             this.btopnfadd = new System.Windows.Forms.Button();
             this.tbPX = new System.Windows.Forms.TextBox();
             this.tbPY = new System.Windows.Forms.TextBox();
-            this.lb1 = new System.Windows.Forms.Label();
-            this.debug = new System.Windows.Forms.TextBox();
             this.sqLiteCommand1 = new System.Data.SQLite.SQLiteCommand();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // btopnfadd
             // 
-            this.btopnfadd.Location = new System.Drawing.Point(789, 12);
+            this.btopnfadd.Location = new System.Drawing.Point(504, 15);
             this.btopnfadd.Name = "btopnfadd";
             this.btopnfadd.Size = new System.Drawing.Size(75, 23);
             this.btopnfadd.TabIndex = 1;
@@ -48,59 +48,47 @@
             // 
             // tbPX
             // 
-            this.tbPX.Location = new System.Drawing.Point(786, 42);
+            this.tbPX.Location = new System.Drawing.Point(501, 45);
             this.tbPX.Name = "tbPX";
             this.tbPX.Size = new System.Drawing.Size(100, 20);
             this.tbPX.TabIndex = 2;
             // 
             // tbPY
             // 
-            this.tbPY.Location = new System.Drawing.Point(786, 69);
+            this.tbPY.Location = new System.Drawing.Point(501, 72);
             this.tbPY.Name = "tbPY";
             this.tbPY.Size = new System.Drawing.Size(100, 20);
             this.tbPY.TabIndex = 3;
-            // 
-            // lb1
-            // 
-            this.lb1.AutoSize = true;
-            this.lb1.Location = new System.Drawing.Point(786, 115);
-            this.lb1.Name = "lb1";
-            this.lb1.Size = new System.Drawing.Size(13, 13);
-            this.lb1.TabIndex = 4;
-            this.lb1.Text = "0";
-            // 
-            // debug
-            // 
-            this.debug.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.debug.Location = new System.Drawing.Point(12, 518);
-            this.debug.Multiline = true;
-            this.debug.Name = "debug";
-            this.debug.Size = new System.Drawing.Size(976, 56);
-            this.debug.TabIndex = 5;
             // 
             // sqLiteCommand1
             // 
             this.sqLiteCommand1.CommandText = null;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox1.Location = new System.Drawing.Point(12, 39);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(483, 509);
+            this.pictureBox1.TabIndex = 5;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Paint += new System.Windows.Forms.PaintEventHandler(this.pictureBox1_Paint);
+            this.pictureBox1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pictureBox1_MouseDown);
+            this.pictureBox1.MouseMove += new System.Windows.Forms.MouseEventHandler(this.pictureBox1_MouseMove);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1000, 586);
-            this.Controls.Add(this.debug);
-            this.Controls.Add(this.lb1);
+            this.ClientSize = new System.Drawing.Size(614, 586);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.tbPY);
             this.Controls.Add(this.tbPX);
             this.Controls.Add(this.btopnfadd);
             this.Name = "Form1";
             this.Text = "Form1";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Form1_FormClosed);
-            this.Load += new System.EventHandler(this.Form1_Load);
-            this.Paint += new System.Windows.Forms.PaintEventHandler(this.Form1_Paint);
-            this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Form1_MouseDown);
-            this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.Form1_MouseMove);
-            this.MouseUp += new System.Windows.Forms.MouseEventHandler(this.Form1_MouseUp);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -110,9 +98,8 @@
         private System.Windows.Forms.Button btopnfadd;
         private System.Windows.Forms.TextBox tbPX;
         private System.Windows.Forms.TextBox tbPY;
-        private System.Windows.Forms.Label lb1;
-        private System.Windows.Forms.TextBox debug;
         private System.Data.SQLite.SQLiteCommand sqLiteCommand1;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
 

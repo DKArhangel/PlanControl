@@ -25,8 +25,8 @@ namespace Plan
             {
                 SQLiteCommand CMD = DB.CreateCommand();
                 CMD.CommandText = "insert into PlanClear(row,col,type,tupes) values( @row , @col, @type, @tupes )";
-
-                for (int i = 201; i < 319; i+=2)
+                
+                for (int i = 201; i < 317; i+=2)
                     for(int y = 1; y< 51; y+=2)
                 {
                 CMD.Parameters.Add("@row", System.Data.DbType.String).Value = y;

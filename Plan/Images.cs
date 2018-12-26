@@ -9,7 +9,7 @@ namespace Plan
 {
     class Icons
     {
-        private Bitmap plg = Resource1.plg,
+        public Bitmap plg = Resource1.plg,
                       plg2 = Resource1.plg2,
                       tube = Resource1.tube,
                       tubebl = Resource1.tubeblack,

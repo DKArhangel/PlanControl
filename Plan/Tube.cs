@@ -53,8 +53,8 @@ namespace Plan
         {
             RectangleCoords rectangleCoords = new RectangleCoords()
             {
-                x = (int)(tubeCoords.col - 200) * tubeShift, //Ряд
-                y = (int)tubeCoords.row * tubeSize //Колонна
+                x = ((int)(tubeCoords.col - 200) * tubeShift), //Ряд
+                y = ((int)tubeCoords.row * tubeSize) //Колонна 
             };
 
             //сместили если четный ряд
